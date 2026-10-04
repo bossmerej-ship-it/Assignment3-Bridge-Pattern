@@ -1,0 +1,25 @@
+package abstraction;
+
+import implementor.Renderer;
+
+/** Circle retains its radius and delegates its rendering to the bridge. */
+public final class Circle extends Shape {
+    private final int radius;
+
+    public Circle(String id, int radius, Renderer renderer) {
+        super(id, renderer);
+        if (radius <= 0) {
+            throw new IllegalArgumentException("radius must be positive");
+        }
+        this.radius = radius;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    @Override
+    public String execute() {
+        return renderer.renderCircle(radius);
+    }
+}
