@@ -5,3 +5,4 @@ src/abstraction/Square.java
 src/implementor/Renderer.java
 src/implementor/VectorRenderer.java
 src/implementor/RasterRenderer.java
+src/implementor/AsciiRenderer.java

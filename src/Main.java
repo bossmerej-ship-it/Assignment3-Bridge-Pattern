@@ -1,6 +1,7 @@
 import abstraction.Circle;
 import abstraction.Shape;
 import abstraction.Square;
+import implementor.AsciiRenderer;
 import implementor.RasterRenderer;
 import implementor.Renderer;
 import implementor.VectorRenderer;
@@ -52,6 +53,12 @@ public final class Main {
                 "sameObject=" + sameObject + " | stateUnchanged=" + stateUnchanged
                         + " | before=" + before + " | after=" + after,
                 "same object, same ID and radius, Vector before and Raster after");
+
+        Circle asciiCircle = new Circle("C-1", 2, new AsciiRenderer());
+        check("T6", "Circle + AsciiRenderer", "ASCII circle radius=2", asciiCircle.execute());
+
+        Square asciiSquare = new Square("S-1", 3, new AsciiRenderer());
+        check("T7", "Square + AsciiRenderer", "ASCII square side=3", asciiSquare.execute());
     }
 
     private static void check(String id, String classes, String expected, String actual) {
@@ -67,3 +74,5 @@ public final class Main {
                 + (success ? "" : " | expected=" + expected));
     }
 }
+
+
