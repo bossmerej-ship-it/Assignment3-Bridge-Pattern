@@ -1,7 +1,7 @@
 # Assignment 3 | Bridge Pattern
 
 - **Author:** Merey Kuatbay
-- **Program:** 6B06102 Software Engineering (the instruction PDF does not give a separate group number)
+- **Group:** SE 2537
 - **Topic:** A — Shape Drawing Renderer
 - **Repository:** https://github.com/bossmerej-ship-it/Assignment3-Bridge-Pattern
 - **Submitted source commit:** `276269d14e29dc35d963890acc68e2d9ac83ce46`
@@ -42,3 +42,4 @@ Bridge separates the shape abstraction hierarchy from the renderer implementatio
 - Gamma, E., Helm, R., Johnson, R., and Vlissides, J. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994, “Bridge” and “Adapter”.
 - Oracle. *Java Language Specification, Java SE 17 Edition*. https://docs.oracle.com/javase/specs/jls/se17/jls17.pdf
 - Assignment 3 | Bridge Pattern, Astana IT University, 2026–2027, supplied course instructions.
+
